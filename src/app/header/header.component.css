@@ -1,0 +1,41 @@
+header {
+  background-color: #252525;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 5vw;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+a {
+  color: white;
+}
+/* 
+  li > a:visited {
+    color: blue;
+  } */
+
+.header-items-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#brand-image {
+  height: 48px;
+  width: 48px;
+}
+
+#brand-image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

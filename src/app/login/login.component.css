@@ -1,0 +1,121 @@
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.panel {
+}
+
+.panel.left {
+  border-left: 0.25rem solid yellow;
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  padding: 5vw;
+  gap: 1rem;
+}
+
+.brand-logo {
+  height: 192px;
+  width: 192px;
+}
+
+.brand-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.heading {
+  padding: 1rem 0;
+}
+
+.heading > * {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.heading .title {
+  color: #fff;
+}
+
+.heading .subtitle {
+  color: #878787;
+  font-size: large;
+}
+
+.panel.right {
+  display: grid;
+  place-content: center;
+}
+
+.login-box {
+  width: 400px;
+}
+
+.login-box > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login-box .help {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  /* border: 1px solid #ededed; */
+  /* box-shadow:
+    rgba(240, 46, 170, 0.4) 5px 5px,
+    rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px,
+    rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px; */
+}
+
+form > * {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-group {
+  padding: 0.5rem 0;
+}
+
+.input-group > * {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid #323232;
+  font-size: large;
+}
+
+/* input:focus {
+  border: none;
+  outline: none;
+} */
+
+label {
+  font-weight: 600;
+  font-size: large;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  background-color: black;
+  font-size: large;
+}
